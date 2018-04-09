@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './screens/Home';
 import Gnome from './screens/Gnome';
 
-const App = () => (
+const Router = () => (
   <BrowserRouter>
     <Switch>
       <Route exact path="/" component={Home} />
@@ -12,4 +12,4 @@ const App = () => (
   </BrowserRouter>
 );
 
-export default App;
+export default Router;

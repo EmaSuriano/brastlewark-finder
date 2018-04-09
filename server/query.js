@@ -1,6 +1,8 @@
 import fetch from 'node-fetch';
 import memoize from 'fast-memoize';
-import { BASE_URL } from './constant';
+
+const BASE_URL =
+  'https://raw.githubusercontent.com/rrafols/mobile_test/master/data.json';
 
 const fetchGnomes = async () => {
   const rawData = await fetch(BASE_URL);
