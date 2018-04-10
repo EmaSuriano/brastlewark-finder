@@ -1,8 +1,7 @@
 import { createSelector } from 'reselect';
 
 //ACTIONS
-const CHANGE_NAME = 'CHANGE_NAME';
-const CHANGE_PROFESSIONS = 'CHANGE_PROFESSIONS';
+const SET_GNOME_CRITERIA = 'SET_GNOME_CRITERIA';
 
 //REDUCER
 const initialState = {
@@ -12,14 +11,10 @@ const initialState = {
 
 export default function reduce(state = initialState, action) {
   switch (action.type) {
-    case CHANGE_NAME:
+    case SET_GNOME_CRITERIA:
       return {
         ...state,
         name: action.name,
-      };
-    case CHANGE_PROFESSIONS:
-      return {
-        ...state,
         professions: action.professions,
       };
     default:
@@ -37,30 +32,31 @@ const getProfessions = createSelector(
   search => search.professions || [],
 );
 
+const getCriteria = createSelector(
+  getName,
+  getProfessions,
+  (name, professions) => ({ name, professions }),
+);
+
 const isFilterApplied = createSelector(
   getName,
   getProfessions,
-  (name, professions) => name || professions.length > 0,
+  (name, professions) => !!name || professions.length > 0,
 );
 
 export const selectors = {
   getName,
   getProfessions,
   isFilterApplied,
+  getCriteria,
 };
 
 //ACTION CREATORS
-export const changeName = name => ({
-  type: CHANGE_NAME,
-  name,
-});
-
-export const changeProfessions = professions => ({
-  type: CHANGE_PROFESSIONS,
-  professions,
+const setGnomeCriteria = criteria => ({
+  type: SET_GNOME_CRITERIA,
+  ...criteria,
 });
 
 export const actionCreators = {
-  changeName,
-  changeProfessions,
+  setGnomeCriteria,
 };

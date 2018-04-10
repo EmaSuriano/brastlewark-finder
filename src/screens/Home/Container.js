@@ -6,16 +6,14 @@ import {
 } from '../../ducks/search';
 
 const mapStateToProps = state => ({
-  name: searchSelectors.getName(state),
-  professions: searchSelectors.getProfessions(state),
+  criteria: searchSelectors.getCriteria(state),
   isFilterApplied: searchSelectors.isFilterApplied(state),
 });
 
-const { changeName, changeProfessions } = searchActionCreators;
+const { setGnomeCriteria } = searchActionCreators;
 
 const mapDispatchToProps = {
-  changeName,
-  changeProfessions,
+  setGnomeCriteria,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
