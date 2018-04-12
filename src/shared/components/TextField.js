@@ -5,17 +5,17 @@ import PropTypes from 'prop-types';
 const Input = styled.input`
   padding: 0.5em;
   margin: 0.5em;
-  color: palevioletred;
-  background: papayawhip;
+  color: ${props => props.theme.secondary};
+  background: ${props => props.theme.light};
   border: none;
   border-radius: 3px;
 `;
 
-const TextField = ({ value, onChange }) => (
+const TextField = ({ onChange, ...rest }) => (
   <Input
     type="text"
     onChange={({ target: { value } }) => onChange(value)}
-    value={value}
+    {...rest}
   />
 );
 

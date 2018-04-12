@@ -2,11 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 const AppContainer = styled.div`
-  background: lightblue;
-  display: flex;
+  font-family: 'Roboto', sans-serif;
+  background: ${props => props.theme.background};
   height: 100vh;
-  flex-direction: column;
-  align-items: center;
+  overflow-y: auto;
+  min-width: 600px;
 `;
 
 export default AppContainer;

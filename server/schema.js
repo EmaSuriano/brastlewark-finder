@@ -2,7 +2,7 @@ import { makeExecutableSchema } from 'graphql-tools';
 import { getGnomes, getGnomeById } from './query';
 
 const typeDefs = `
-  type Query { allGnomes: [Gnome], gnome(id: ID!): Gnome }
+  type Query { allGnomes(name: String, professions: [String]): [Gnome], gnome(id: ID!): Gnome }
   type Gnome {
     id: ID!,
     name: String,

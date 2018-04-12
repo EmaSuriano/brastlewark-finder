@@ -1,18 +1,10 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
 
 const Title = styled.h1`
-  color: ${props => props.color};
+  color: ${props => props.theme.light};
+  font-family: 'Slabo 27px', serif;
   text-align: center;
-  margin: 1em 0;
+  font-size: 7em;
 `;
-
-Title.propTypes = {
-  color: PropTypes.string,
-};
-
-Title.defaultProps = {
-  color: 'white',
-};
 
 export default Title;

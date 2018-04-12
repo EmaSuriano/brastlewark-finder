@@ -8,8 +8,10 @@ import {
   Message,
 } from '../../shared/components';
 import ProfessionSelector from './components/ProfessionSelector';
-import FiltersContainer from './components/FiltersContainer';
+import FiltersForm from './components/FiltersForm';
 import GnomeResult from './components/GnomeResult';
+import HomeGrid from './components/HomeGrid';
+import styled from 'styled-components';
 
 class HomeScreen extends Component {
   static propTypes = {
@@ -30,26 +32,36 @@ class HomeScreen extends Component {
 
   searchGnomes = () => this.props.setGnomeCriteria(this.state);
 
+  onSubmit = evt => {
+    evt.preventDefault();
+    this.searchGnomes();
+  };
+
   render() {
     const { isFilterApplied, criteria } = this.props;
     const { name, professions } = this.state;
+    const disabled = !this.state.name && this.state.professions.length === 0;
     return (
-      <AppContainer>
+      <HomeGrid>
         <Title>Brastlewark Finder</Title>
-        <FiltersContainer>
-          <TextField value={name} onChange={this.changeName} />
+        <FiltersForm onSubmit={this.onSubmit}>
+          <TextField
+            value={name}
+            onChange={this.changeName}
+            placeholder="Type gnome's name"
+          />
           <ProfessionSelector
             onChange={this.changeProfessions}
             selected={professions}
           />
-          <Button onClick={this.searchGnomes}>Search</Button>
-        </FiltersContainer>
+          <Button disabled={disabled}>Search</Button>
+        </FiltersForm>
         {!isFilterApplied ? (
           <Message>Please filter by something to search gnomes!</Message>
         ) : (
           <GnomeResult criteria={criteria} />
         )}
-      </AppContainer>
+      </HomeGrid>
     );
   }
 }
