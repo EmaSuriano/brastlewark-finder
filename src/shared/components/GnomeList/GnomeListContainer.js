@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const GnomeResultContainer = styled.div`
+const GnomeListContainer = styled.div`
   display: grid;
   grid-gap: 30px;
   padding-bottom: 30px; // end of the result
@@ -10,4 +10,4 @@ const GnomeResultContainer = styled.div`
   align-content: center;
 `;
 
-export default GnomeResultContainer;
+export default GnomeListContainer;

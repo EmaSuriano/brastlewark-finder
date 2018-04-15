@@ -2,9 +2,6 @@ import styled from 'styled-components';
 
 const ProfessionTag = styled.span`
   border-radius: 2px;
-  /* background-color: #ebf5ff;
-  border: 1px solid #c2e0ff;
-  color: #007eff; */
   background-color: ${props => props.theme.accent}1A;
   border: 1px solid ${props => props.theme.accent}40;
   color: ${props => props.theme.secondary};

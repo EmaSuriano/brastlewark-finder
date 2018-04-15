@@ -24,7 +24,9 @@ export default class GnomeScreen extends Component {
           {({ loading, error, data }) => {
             if (loading) return <Spinner />;
             if (error)
-              return <Message dark>{`Error! ${error.message}`}</Message>;
+              return (
+                <Message color="secondary">{`Error! ${error.message}`}</Message>
+              );
             return <GnomeInformation {...data.gnome} />;
           }}
         </Query>

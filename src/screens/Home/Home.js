@@ -36,7 +36,7 @@ class HomeScreen extends Component {
     const disabled = !this.state.name && this.state.professions.length === 0;
     return (
       <HomeGrid>
-        <Title>Brastlewark Finder</Title>
+        <Title>Brastlewark Finder 🔎</Title>
         <FiltersForm onSubmit={this.onSubmit}>
           <TextField
             value={name}
@@ -50,7 +50,9 @@ class HomeScreen extends Component {
           <Button disabled={disabled}>Search</Button>
         </FiltersForm>
         {!isFilterApplied ? (
-          <Message>Please filter by something to search gnomes!</Message>
+          <Message fontSize="1.2em">
+            Please filter by gnome's name or professions in order to search!
+          </Message>
         ) : (
           <GnomeResult criteria={criteria} />
         )}

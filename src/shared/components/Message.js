@@ -2,16 +2,22 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const Message = styled.p`
-  margin-top: 2em;
-  color: ${props => (props.dark ? props.theme.secondary : props.theme.light)};
+  color: ${props => props.theme[props.color]};
+  font-weight: ${props => (props.bold ? 'bold' : 'inherit')};
+  font-size: ${props => props.fontSize};
 `;
 
 Message.propTypes = {
-  dark: PropTypes.bool,
+  theme: PropTypes.object,
+  color: PropTypes.string,
+  bold: PropTypes.bool,
+  fontSize: PropTypes.string,
 };
 
-Message.propTypes = {
-  dark: false,
+Message.defaultProps = {
+  color: 'light',
+  bold: false,
+  fontSize: 'inherit',
 };
 
 export default Message;
