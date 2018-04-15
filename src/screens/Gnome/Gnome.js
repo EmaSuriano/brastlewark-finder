@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import Modal from 'react-modal';
 import { Query } from 'react-apollo';
 import { GET_GNOME_BY_ID } from './query';
-import { GnomeCard, Message, Spinner } from '../../shared/components';
+import { Message, Spinner } from '../../shared/components';
 import GnomeInformation from './components/GnomeInformation';
+import GnomeModal from './components/GnomeModal';
 
 export default class GnomeScreen extends Component {
   static propTypes = {
@@ -20,8 +19,7 @@ export default class GnomeScreen extends Component {
       history,
     } = this.props;
     return (
-      <Modal isOpen onRequestClose={() => history.push('/')}>
-        <Link to="/">Gnome {id} - Go Back</Link>
+      <GnomeModal history={history}>
         <Query query={GET_GNOME_BY_ID} variables={{ id }}>
           {({ loading, error, data }) => {
             if (loading) return <Spinner />;
@@ -30,7 +28,7 @@ export default class GnomeScreen extends Component {
             return <GnomeInformation {...data.gnome} />;
           }}
         </Query>
-      </Modal>
+      </GnomeModal>
     );
   }
 }
