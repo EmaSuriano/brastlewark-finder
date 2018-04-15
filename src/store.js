@@ -1,6 +1,7 @@
-import { createStore, applyMiddleware, combineReducers } from 'redux';
-import search from './ducks/search';
+import { createStore, combineReducers } from 'redux';
 import { devToolsEnhancer } from 'redux-devtools-extension';
+import search from './ducks/search';
+
 const store = createStore(
   combineReducers({
     search,

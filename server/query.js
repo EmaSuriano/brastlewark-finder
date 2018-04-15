@@ -11,10 +11,9 @@ const fetchGnomes = memoize(async () => {
   return jsonData.Brastlewark;
 });
 
-const getGnomes = async (_, args) => {
+const getGnomes = async (_, args = {}) => {
   const gnomes = await fetchGnomes();
-  console.log(args);
-  const { name, professions = [] } = args;
+  const { name = '', professions = [] } = args;
   return gnomes.filter(
     gnome =>
       (!name || new RegExp(name, 'i').test(gnome.name)) &&

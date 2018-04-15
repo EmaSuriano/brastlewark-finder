@@ -9,6 +9,7 @@ import registerServiceWorker from './registerServiceWorker';
 import { ThemeProvider } from 'styled-components';
 import theme from './shared/constants/theme';
 import { AppContainer } from './shared/components';
+import './normalize.css';
 
 ReactDOM.render(
   <Provider store={store}>

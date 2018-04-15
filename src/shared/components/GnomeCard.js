@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import ProfessionTag from './ProfessionTag';
 
 const GnomeContainer = styled.div`
@@ -7,6 +8,7 @@ const GnomeContainer = styled.div`
   border-radius: 2px;
   display: flex;
   flex-direction: row;
+  height: 100%;
   justify-content: flex-start;
   align-items: start;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -53,17 +55,19 @@ const GnomeCard = ({ id, name, thumbnail, professions }) => {
       : professions;
 
   return (
-    <GnomeContainer>
-      <GnomePicture src={thumbnail} />
-      <GnomeInformation>
-        <GnomeName>{name}</GnomeName>
-        <div>
-          {lessProfessions.map(prof => (
-            <ProfessionTag key={prof}>{prof}</ProfessionTag>
-          ))}
-        </div>
-      </GnomeInformation>
-    </GnomeContainer>
+    <Link to={`/gnome/${id}`}>
+      <GnomeContainer>
+        <GnomePicture src={thumbnail} />
+        <GnomeInformation>
+          <GnomeName>{name}</GnomeName>
+          <div>
+            {lessProfessions.map(prof => (
+              <ProfessionTag key={prof}>{prof}</ProfessionTag>
+            ))}
+          </div>
+        </GnomeInformation>
+      </GnomeContainer>
+    </Link>
   );
 };
 

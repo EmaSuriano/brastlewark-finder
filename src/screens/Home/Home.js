@@ -1,17 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import {
-  TextField,
-  AppContainer,
-  Title,
-  Button,
-  Message,
-} from '../../shared/components';
+import { TextField, Title, Button, Message } from '../../shared/components';
 import ProfessionSelector from './components/ProfessionSelector';
 import FiltersForm from './components/FiltersForm';
 import GnomeResult from './components/GnomeResult';
 import HomeGrid from './components/HomeGrid';
-import styled from 'styled-components';
 
 class HomeScreen extends Component {
   static propTypes = {

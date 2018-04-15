@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 import { GET_GNOMES } from './query';
 import { Query } from 'react-apollo';
 import { GnomeCard, Message, Spinner } from '../../../../shared/components';
