@@ -14,12 +14,10 @@ const fetchGnomes = memoize(async () => {
 const getGnomes = async (_, args = {}) => {
   const gnomes = await fetchGnomes();
   const { name = '', professions = [] } = args;
-  return gnomes.filter(
-    gnome =>
-      (!name || new RegExp(name, 'i').test(gnome.name)) &&
+  return gnomes.filter(gnome =>
+    (!name || new RegExp(name, 'i').test(gnome.name)) &&
       (!professions.length ||
-        professions.every(prof => gnome.professions.includes(prof))),
-  );
+        professions.every(prof => gnome.professions.includes(prof))));
 };
 
 const getGnomeById = async (_, { id }) => {

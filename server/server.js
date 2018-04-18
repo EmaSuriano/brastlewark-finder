@@ -10,16 +10,12 @@ const SERVER_PORT = '3001';
 
 const corsUpdater = cors();
 
-const server = micro(
-  corsUpdater(
-    router(
-      get('/graphql', graphqlHandler),
-      post('/graphql', graphqlHandler),
-      get('/graphiql', graphiqlHandler),
-      (req, res) => send(res, 404, 'not found'),
-    ),
-  ),
-);
+const server = micro(corsUpdater(router(
+  get('/graphql', graphqlHandler),
+  post('/graphql', graphqlHandler),
+  get('/graphiql', graphiqlHandler),
+  (req, res) => send(res, 404, 'not found'),
+)));
 
 server.listen(3001, () => {
   console.log(`Go to http://localhost:${3001}/graphiql to run queries!`);

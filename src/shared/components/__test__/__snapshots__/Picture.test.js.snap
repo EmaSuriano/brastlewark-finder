@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Picture /> render with size 1`] = `
+.c0 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: auto;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  object-fit: cover;
+  border: 1px #2D3142 solid;
+}
+
+<img
+  atl="Gnome profile picture"
+  className="c0"
+  size={200}
+/>
+`;

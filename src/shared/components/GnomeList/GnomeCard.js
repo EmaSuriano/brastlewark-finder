@@ -62,12 +62,14 @@ const StyledLink = styled(Link)`
 
 const MAX_PROFESSIONS = 2;
 
-const GnomeCard = ({ id, name, thumbnail, professions }) => {
+const GnomeCard = ({
+  id, name, thumbnail, professions,
+}) => {
   const lessProfessions =
     professions.length > MAX_PROFESSIONS
       ? professions
-          .slice(0, MAX_PROFESSIONS + 1)
-          .concat(`+${professions.length - MAX_PROFESSIONS}`)
+        .slice(0, MAX_PROFESSIONS + 1)
+        .concat(`+${professions.length - MAX_PROFESSIONS}`)
       : professions;
 
   return (

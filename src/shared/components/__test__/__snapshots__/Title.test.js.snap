@@ -2,6 +2,7 @@
 
 exports[`<Title /> should render Title with defaultValues 1`] = `
 .c0 {
+  color: #FFFFFF;
   font-family: 'Slabo 27px',serif;
   text-align: center;
   font-size: 7em;
@@ -16,6 +17,7 @@ exports[`<Title /> should render Title with defaultValues 1`] = `
 
 exports[`<Title /> should render Title with fontSize 1`] = `
 .c0 {
+  color: #FFFFFF;
   font-family: 'Slabo 27px',serif;
   text-align: center;
   font-size: 2em;
@@ -30,6 +32,7 @@ exports[`<Title /> should render Title with fontSize 1`] = `
 
 exports[`<Title /> should render Title with red color 1`] = `
 .c0 {
+  color: #EF8354;
   font-family: 'Slabo 27px',serif;
   text-align: center;
   font-size: 7em;
@@ -37,7 +40,7 @@ exports[`<Title /> should render Title with red color 1`] = `
 
 <h1
   className="c0"
-  color="red"
+  color="accent"
   fontSize="7"
 />
 `;

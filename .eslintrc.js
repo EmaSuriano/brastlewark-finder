@@ -1,14 +1,14 @@
 module.exports = {
-  extends: ['airbnb', 'plugin:react/recommended'],
+  extends: ['plugin:react/recommended', 'airbnb'],
   env: {
     jest: true,
     browser: true,
   },
-  parser: 'babel-eslint',
   rules: {
     'no-confusing-arrow': 'off',
     'import/no-extraneous-dependencies': 'off',
     'react/jsx-filename-extension': 'off',
+    'function-paren-newline': 'off',
   },
   settings: {
     'import/resolver': {

@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Message /> render default props 1`] = `
+.c0 {
+  color: #FFFFFF;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+<p
+  className="c0"
+  color="light"
+  fontSize="inherit"
+/>
+`;
+
+exports[`<Message /> render with bold 1`] = `
+.c0 {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: inherit;
+}
+
+<p
+  className="c0"
+  color="light"
+  fontSize="inherit"
+/>
+`;
+
+exports[`<Message /> render with color 1`] = `
+.c0 {
+  color: #EF8354;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+<p
+  className="c0"
+  color="accent"
+  fontSize="inherit"
+/>
+`;
+
+exports[`<Message /> render with fontSize 1`] = `
+.c0 {
+  color: #FFFFFF;
+  font-weight: inherit;
+  font-size: 12em;
+}
+
+<p
+  className="c0"
+  color="light"
+  fontSize="12em"
+/>
+`;

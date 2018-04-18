@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import { ThemePropTypes } from 'shared/constants/theme';
 
 const Picture = styled.img.attrs({
   atl: 'Gnome profile picture',
@@ -14,8 +15,8 @@ const Picture = styled.img.attrs({
 `;
 
 Picture.propTypes = {
-  theme: PropTypes.object,
-  size: PropTypes.number,
+  theme: ThemePropTypes,
+  size: PropTypes.number.isRequired,
 };
 
 export default Picture;

@@ -1,9 +1,9 @@
 import { createSelector } from 'reselect';
 
-//ACTIONS
+// ACTIONS
 const SET_GNOME_CRITERIA = 'SET_GNOME_CRITERIA';
 
-//REDUCER
+// REDUCER
 const initialState = {
   name: '',
   professions: [],
@@ -22,7 +22,7 @@ export default function reduce(state = initialState, action) {
   }
 }
 
-//SELECTORS
+// SELECTORS
 const getSearch = state => state.search;
 
 const getName = createSelector(getSearch, search => search.name);
@@ -51,7 +51,7 @@ export const selectors = {
   getCriteria,
 };
 
-//ACTION CREATORS
+// ACTION CREATORS
 const setGnomeCriteria = criteria => ({
   type: SET_GNOME_CRITERIA,
   ...criteria,

@@ -1,13 +1,8 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import { GET_GNOMES } from './query';
 import { Query } from 'react-apollo';
-import {
-  GnomeCard,
-  Message,
-  Spinner,
-  GnomeList,
-} from '../../../../shared/components';
+import { Message, Spinner, GnomeList } from 'shared/components';
+import { GET_GNOMES } from './query';
 
 class GnomeResult extends PureComponent {
   render() {

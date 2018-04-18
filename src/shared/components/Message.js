@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import { ThemePropTypes } from 'shared/constants/theme';
 
 const Message = styled.p`
   color: ${props => props.theme[props.color]};
@@ -8,7 +9,7 @@ const Message = styled.p`
 `;
 
 Message.propTypes = {
-  theme: PropTypes.object,
+  theme: ThemePropTypes,
   color: PropTypes.string,
   bold: PropTypes.bool,
   fontSize: PropTypes.string,
