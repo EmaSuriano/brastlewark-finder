@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { ThemePropTypes } from 'shared/constants/theme';
 import PropTypes from 'prop-types';
 
 const Title = styled.h1`
@@ -9,7 +10,7 @@ const Title = styled.h1`
 `;
 
 Title.propTypes = {
-  theme: PropTypes.object.isRequired,
+  theme: ThemePropTypes,
   fontSize: PropTypes.string,
   color: PropTypes.string,
 };

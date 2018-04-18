@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "baseUrl": ".",
+    "paths": {
+      "shared/*": ["./src/shared/*"]
+    }
+  },
+  "include": ["src/**/*"]
+}

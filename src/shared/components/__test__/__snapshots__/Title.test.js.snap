@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Title /> should render Title with defaultValues 1`] = `
+.c0 {
+  font-family: 'Slabo 27px',serif;
+  text-align: center;
+  font-size: 7em;
+}
+
+<h1
+  className="c0"
+  color="light"
+  fontSize="7"
+/>
+`;
+
+exports[`<Title /> should render Title with fontSize 1`] = `
+.c0 {
+  font-family: 'Slabo 27px',serif;
+  text-align: center;
+  font-size: 2em;
+}
+
+<h1
+  className="c0"
+  color="light"
+  fontSize="2"
+/>
+`;
+
+exports[`<Title /> should render Title with red color 1`] = `
+.c0 {
+  font-family: 'Slabo 27px',serif;
+  text-align: center;
+  font-size: 7em;
+}
+
+<h1
+  className="c0"
+  color="red"
+  fontSize="7"
+/>
+`;
