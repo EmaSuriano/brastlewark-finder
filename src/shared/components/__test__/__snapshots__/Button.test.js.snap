@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> render defaultProps 1`] = `
+.c0 {
+  font-size: 1em;
+  padding: 0.5em;
+  margin: 0.5em;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+<button
+  className="c0"
+  disabled={false}
+  onClick={[Function]}
+/>
+`;
+
+exports[`<Button /> render with disabled 1`] = `
+.c0 {
+  font-size: 1em;
+  padding: 0.5em;
+  margin: 0.5em;
+  border-radius: 3px;
+  border: none;
+  cursor: not-allowed;
+}
+
+<button
+  className="c0"
+  disabled={true}
+  onClick={[Function]}
+/>
+`;

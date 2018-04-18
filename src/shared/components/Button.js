@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const DISABLED_FUNC = () => false;
 
@@ -17,5 +18,15 @@ const Button = styled.button.attrs({
     props.disabled ? props.theme.secondary : props.theme.light};
   cursor: ${props => (props.disabled ? 'not-allowed' : 'pointer')};
 `;
+
+Button.propTypes = {
+  disabled: PropTypes.bool,
+  onClick: PropTypes.func,
+};
+
+Button.defaultProps = {
+  disabled: false,
+  onClick: DISABLED_FUNC,
+};
 
 export default Button;
