@@ -19,7 +19,7 @@ class HomeScreen extends Component {
     professions: [],
   };
 
-  changeName = name => this.setState({ name });
+  changeName = ({ target: { value } }) => this.setState({ name: value });
 
   changeProfessions = professions => this.setState({ professions });
 

@@ -21,4 +21,6 @@ Message.defaultProps = {
   fontSize: 'inherit',
 };
 
+Message.displayName = 'Message';
+
 export default Message;

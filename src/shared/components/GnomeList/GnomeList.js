@@ -1,7 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import GnomeCard from './GnomeCard';
 import GnomeListContainer from './GnomeListContainer';
-import PropTypes from 'prop-types';
 
 const GnomeList = ({ gnomes }) => (
   <GnomeListContainer>
@@ -11,6 +11,10 @@ const GnomeList = ({ gnomes }) => (
 
 GnomeList.propTypes = {
   gnomes: PropTypes.arrayOf(PropTypes.object),
+};
+
+GnomeList.defaultProps = {
+  gnomes: [],
 };
 
 export default GnomeList;

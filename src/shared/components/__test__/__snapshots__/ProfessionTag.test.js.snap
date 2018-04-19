@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProfessionTag /> render 1`] = `
+.c0 {
+  border-radius: 2px;
+  background-color: #EF83541A;
+  border: 1px solid #EF835440;
+  color: #2D3142;
+  display: inline-block;
+  font-size: 0.9em;
+  line-height: 1.4;
+  margin-right: 5px;
+  margin-top: 5px;
+  padding: 3px;
+}
+
+<span
+  className="c0"
+/>
+`;

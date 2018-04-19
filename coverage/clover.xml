@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1524085907451" clover="3.2.0">
-  <project timestamp="1524085907451" name="All files">
-    <metrics statements="263" coveredstatements="15" conditionals="171" coveredconditionals="8" methods="108" coveredmethods="7" elements="542" coveredelements="30" complexity="0" loc="263" ncloc="263" packages="11" files="34" classes="34">
+<coverage generated="1524102653573" clover="3.2.0">
+  <project timestamp="1524102653574" name="All files">
+    <metrics statements="227" coveredstatements="76" conditionals="107" coveredconditionals="12" methods="90" coveredmethods="28" elements="424" coveredelements="116" complexity="0" loc="227" ncloc="227" packages="11" files="28" classes="28">
       <package name="src">
         <metrics statements="25" coveredstatements="0" conditionals="25" coveredconditionals="0" methods="16" coveredmethods="0"/>
         <file name="apolloClient.js" path="C:\Users\Ema Suriano\git\brastlewark-finder\src\apolloClient.js">
@@ -63,7 +63,7 @@
         </file>
       </package>
       <package name="src.screens.Gnome">
-        <metrics statements="17" coveredstatements="0" conditionals="16" coveredconditionals="0" methods="5" coveredmethods="0"/>
+        <metrics statements="16" coveredstatements="0" conditionals="12" coveredconditionals="0" methods="4" coveredmethods="0"/>
         <file name="Gnome.js" path="C:\Users\Ema Suriano\git\brastlewark-finder\src\screens\Gnome\Gnome.js">
           <metrics statements="14" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="3" coveredmethods="0"/>
           <line num="1" count="0" type="stmt"/>
@@ -80,10 +80,6 @@
           <line num="27" count="0" type="stmt"/>
           <line num="30" count="0" type="stmt"/>
           <line num="35" count="0" type="stmt"/>
-        </file>
-        <file name="index.js" path="C:\Users\Ema Suriano\git\brastlewark-finder\src\screens\Gnome\index.js">
-          <metrics statements="1" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
-          <line num="1" count="0" type="cond" truecount="0" falsecount="4"/>
         </file>
         <file name="query.js" path="C:\Users\Ema Suriano\git\brastlewark-finder\src\screens\Gnome\query.js">
           <metrics statements="2" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
@@ -128,7 +124,7 @@
         </file>
       </package>
       <package name="src.screens.Home">
-        <metrics statements="26" coveredstatements="0" conditionals="16" coveredconditionals="0" methods="10" coveredmethods="0"/>
+        <metrics statements="25" coveredstatements="0" conditionals="12" coveredconditionals="0" methods="9" coveredmethods="0"/>
         <file name="Container.js" path="C:\Users\Ema Suriano\git\brastlewark-finder\src\screens\Home\Container.js">
           <metrics statements="7" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
           <line num="1" count="0" type="stmt"/>
@@ -160,10 +156,6 @@
           <line num="37" count="0" type="stmt"/>
           <line num="61" count="0" type="stmt"/>
         </file>
-        <file name="index.js" path="C:\Users\Ema Suriano\git\brastlewark-finder\src\screens\Home\index.js">
-          <metrics statements="1" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
-          <line num="1" count="0" type="cond" truecount="0" falsecount="4"/>
-        </file>
       </package>
       <package name="src.screens.Home.components">
         <metrics statements="6" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="2" coveredmethods="0"/>
@@ -181,7 +173,7 @@
         </file>
       </package>
       <package name="src.screens.Home.components.GnomeResult">
-        <metrics statements="13" coveredstatements="0" conditionals="19" coveredconditionals="0" methods="5" coveredmethods="0"/>
+        <metrics statements="12" coveredstatements="0" conditionals="15" coveredconditionals="0" methods="4" coveredmethods="0"/>
         <file name="GnomeResult.js" path="C:\Users\Ema Suriano\git\brastlewark-finder\src\screens\Home\components\GnomeResult\GnomeResult.js">
           <metrics statements="10" coveredstatements="0" conditionals="11" coveredconditionals="0" methods="3" coveredmethods="0"/>
           <line num="1" count="0" type="stmt"/>
@@ -195,10 +187,6 @@
           <line num="26" count="0" type="stmt"/>
           <line num="27" count="0" type="stmt"/>
         </file>
-        <file name="index.js" path="C:\Users\Ema Suriano\git\brastlewark-finder\src\screens\Home\components\GnomeResult\index.js">
-          <metrics statements="1" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
-          <line num="1" count="0" type="cond" truecount="0" falsecount="4"/>
-        </file>
         <file name="query.js" path="C:\Users\Ema Suriano\git\brastlewark-finder\src\screens\Home\components\GnomeResult\query.js">
           <metrics statements="2" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
           <line num="1" count="0" type="cond" truecount="0" falsecount="4"/>
@@ -206,7 +194,7 @@
         </file>
       </package>
       <package name="src.screens.Home.components.ProfessionSelector">
-        <metrics statements="24" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="14" coveredmethods="0"/>
+        <metrics statements="23" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="13" coveredmethods="0"/>
         <file name="ProfessionSelector.js" path="C:\Users\Ema Suriano\git\brastlewark-finder\src\screens\Home\components\ProfessionSelector\ProfessionSelector.js">
           <metrics statements="21" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="13" coveredmethods="0"/>
           <line num="1" count="0" type="stmt"/>
@@ -231,10 +219,6 @@
           <line num="48" count="0" type="stmt"/>
           <line num="49" count="0" type="stmt"/>
         </file>
-        <file name="index.js" path="C:\Users\Ema Suriano\git\brastlewark-finder\src\screens\Home\components\ProfessionSelector\index.js">
-          <metrics statements="1" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
-          <line num="1" count="0" type="cond" truecount="0" falsecount="4"/>
-        </file>
         <file name="professions.js" path="C:\Users\Ema Suriano\git\brastlewark-finder\src\screens\Home\components\ProfessionSelector\professions.js">
           <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="1" count="0" type="stmt"/>
@@ -242,162 +226,124 @@
         </file>
       </package>
       <package name="src.shared.components">
-        <metrics statements="72" coveredstatements="14" conditionals="42" coveredconditionals="8" methods="31" coveredmethods="7"/>
+        <metrics statements="47" coveredstatements="47" conditionals="10" coveredconditionals="10" methods="21" coveredmethods="20"/>
         <file name="AppContainer.js" path="C:\Users\Ema Suriano\git\brastlewark-finder\src\shared\components\AppContainer.js">
-          <metrics statements="4" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
-          <line num="1" count="0" type="cond" truecount="0" falsecount="4"/>
-          <line num="3" count="0" type="stmt"/>
-          <line num="4" count="0" type="stmt"/>
-          <line num="8" count="0" type="stmt"/>
+          <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="11" count="1" type="stmt"/>
+          <line num="15" count="1" type="stmt"/>
         </file>
         <file name="Button.js" path="C:\Users\Ema Suriano\git\brastlewark-finder\src\shared\components\Button.js">
-          <metrics statements="9" coveredstatements="9" conditionals="8" coveredconditionals="8" methods="6" coveredmethods="5"/>
-          <line num="4" count="1" type="stmt"/>
-          <line num="6" count="1" type="stmt"/>
-          <line num="7" count="3" type="stmt"/>
-          <line num="8" count="3" type="cond" truecount="2" falsecount="0"/>
-          <line num="14" count="3" type="cond" truecount="2" falsecount="0"/>
-          <line num="18" count="3" type="cond" truecount="2" falsecount="0"/>
+          <metrics statements="10" coveredstatements="10" conditionals="8" coveredconditionals="8" methods="6" coveredmethods="5"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="7" count="1" type="stmt"/>
+          <line num="8" count="3" type="stmt"/>
+          <line num="9" count="3" type="cond" truecount="2" falsecount="0"/>
+          <line num="15" count="3" type="cond" truecount="2" falsecount="0"/>
           <line num="19" count="3" type="cond" truecount="2" falsecount="0"/>
-          <line num="22" count="1" type="stmt"/>
-          <line num="27" count="1" type="stmt"/>
+          <line num="20" count="3" type="cond" truecount="2" falsecount="0"/>
+          <line num="23" count="1" type="stmt"/>
+          <line num="29" count="1" type="stmt"/>
+          <line num="34" count="1" type="stmt"/>
         </file>
         <file name="Message.js" path="C:\Users\Ema Suriano\git\brastlewark-finder\src\shared\components\Message.js">
-          <metrics statements="9" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="4" coveredmethods="0"/>
-          <line num="1" count="0" type="stmt"/>
-          <line num="2" count="0" type="cond" truecount="0" falsecount="4"/>
-          <line num="4" count="0" type="stmt"/>
-          <line num="5" count="0" type="stmt"/>
-          <line num="6" count="0" type="cond" truecount="0" falsecount="2"/>
-          <line num="7" count="0" type="stmt"/>
-          <line num="10" count="0" type="stmt"/>
-          <line num="17" count="0" type="stmt"/>
-          <line num="20" count="0" type="stmt"/>
+          <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+          <line num="5" count="3" type="stmt"/>
+          <line num="6" count="5" type="stmt"/>
+          <line num="7" count="5" type="cond" truecount="2" falsecount="0"/>
+          <line num="8" count="5" type="stmt"/>
+          <line num="11" count="3" type="stmt"/>
+          <line num="18" count="3" type="stmt"/>
+          <line num="24" count="3" type="stmt"/>
         </file>
         <file name="Picture.js" path="C:\Users\Ema Suriano\git\brastlewark-finder\src\shared\components\Picture.js">
-          <metrics statements="8" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="0"/>
-          <line num="1" count="0" type="stmt"/>
-          <line num="2" count="0" type="cond" truecount="0" falsecount="4"/>
-          <line num="4" count="0" type="stmt"/>
-          <line num="7" count="0" type="stmt"/>
-          <line num="8" count="0" type="stmt"/>
-          <line num="13" count="0" type="stmt"/>
-          <line num="16" count="0" type="stmt"/>
-          <line num="18" count="0" type="stmt"/>
+          <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+          <line num="5" count="3" type="stmt"/>
+          <line num="8" count="2" type="stmt"/>
+          <line num="9" count="2" type="stmt"/>
+          <line num="14" count="2" type="stmt"/>
+          <line num="17" count="3" type="stmt"/>
+          <line num="22" count="3" type="stmt"/>
         </file>
         <file name="ProfessionTag.js" path="C:\Users\Ema Suriano\git\brastlewark-finder\src\shared\components\ProfessionTag.js">
-          <metrics statements="6" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="0"/>
-          <line num="1" count="0" type="cond" truecount="0" falsecount="4"/>
-          <line num="3" count="0" type="stmt"/>
-          <line num="5" count="0" type="stmt"/>
-          <line num="6" count="0" type="stmt"/>
-          <line num="7" count="0" type="stmt"/>
-          <line num="14" count="0" type="stmt"/>
+          <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+          <line num="3" count="3" type="stmt"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="6" count="1" type="stmt"/>
+          <line num="7" count="1" type="stmt"/>
+          <line num="16" count="3" type="stmt"/>
         </file>
         <file name="Spinner.js" path="C:\Users\Ema Suriano\git\brastlewark-finder\src\shared\components\Spinner.js">
-          <metrics statements="4" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
-          <line num="1" count="0" type="stmt"/>
-          <line num="2" count="0" type="stmt"/>
-          <line num="3" count="0" type="cond" truecount="0" falsecount="4"/>
-          <line num="5" count="0" type="stmt"/>
+          <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="7" count="1" type="stmt"/>
+          <line num="10" count="1" type="stmt"/>
+          <line num="14" count="1" type="stmt"/>
         </file>
         <file name="TextField.js" path="C:\Users\Ema Suriano\git\brastlewark-finder\src\shared\components\TextField.js">
-          <metrics statements="10" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="6" coveredmethods="0"/>
-          <line num="1" count="0" type="stmt"/>
-          <line num="2" count="0" type="stmt"/>
-          <line num="3" count="0" type="cond" truecount="0" falsecount="8"/>
-          <line num="5" count="0" type="stmt"/>
-          <line num="8" count="0" type="stmt"/>
-          <line num="9" count="0" type="stmt"/>
-          <line num="14" count="0" type="stmt"/>
-          <line num="17" count="0" type="stmt"/>
-          <line num="22" count="0" type="stmt"/>
-          <line num="24" count="0" type="stmt"/>
+          <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="9" count="1" type="stmt"/>
+          <line num="10" count="1" type="stmt"/>
+          <line num="15" count="1" type="stmt"/>
+          <line num="19" count="1" type="stmt"/>
         </file>
         <file name="Title.js" path="C:\Users\Ema Suriano\git\brastlewark-finder\src\shared\components\Title.js">
-          <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+          <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
           <line num="5" count="1" type="stmt"/>
           <line num="6" count="3" type="stmt"/>
           <line num="9" count="3" type="stmt"/>
           <line num="12" count="1" type="stmt"/>
           <line num="18" count="1" type="stmt"/>
-        </file>
-        <file name="index.js" path="C:\Users\Ema Suriano\git\brastlewark-finder\src\shared\components\index.js">
-          <metrics statements="17" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
-          <line num="1" count="0" type="stmt"/>
-          <line num="2" count="0" type="stmt"/>
-          <line num="3" count="0" type="stmt"/>
-          <line num="4" count="0" type="stmt"/>
-          <line num="5" count="0" type="stmt"/>
-          <line num="6" count="0" type="stmt"/>
-          <line num="7" count="0" type="stmt"/>
-          <line num="8" count="0" type="stmt"/>
-          <line num="9" count="0" type="cond" truecount="0" falsecount="4"/>
-          <line num="12" count="0" type="stmt"/>
-          <line num="13" count="0" type="stmt"/>
-          <line num="14" count="0" type="stmt"/>
-          <line num="15" count="0" type="stmt"/>
-          <line num="16" count="0" type="stmt"/>
-          <line num="17" count="0" type="stmt"/>
-          <line num="18" count="0" type="stmt"/>
-          <line num="19" count="0" type="stmt"/>
+          <line num="23" count="1" type="stmt"/>
         </file>
       </package>
       <package name="src.shared.components.GnomeList">
-        <metrics statements="35" coveredstatements="0" conditionals="18" coveredconditionals="0" methods="12" coveredmethods="0"/>
+        <metrics statements="28" coveredstatements="28" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="8"/>
         <file name="GnomeCard.js" path="C:\Users\Ema Suriano\git\brastlewark-finder\src\shared\components\GnomeList\GnomeCard.js">
-          <metrics statements="22" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="7" coveredmethods="0"/>
-          <line num="1" count="0" type="stmt"/>
-          <line num="2" count="0" type="stmt"/>
-          <line num="3" count="0" type="stmt"/>
-          <line num="4" count="0" type="stmt"/>
-          <line num="5" count="0" type="stmt"/>
-          <line num="6" count="0" type="cond" truecount="0" falsecount="4"/>
-          <line num="8" count="0" type="stmt"/>
-          <line num="21" count="0" type="stmt"/>
-          <line num="22" count="0" type="stmt"/>
-          <line num="25" count="0" type="stmt"/>
-          <line num="26" count="0" type="stmt"/>
-          <line num="31" count="0" type="stmt"/>
-          <line num="38" count="0" type="stmt"/>
-          <line num="42" count="0" type="stmt"/>
-          <line num="47" count="0" type="stmt"/>
-          <line num="51" count="0" type="stmt"/>
-          <line num="63" count="0" type="stmt"/>
-          <line num="65" count="0" type="stmt"/>
-          <line num="69" count="0" type="cond" truecount="0" falsecount="2"/>
-          <line num="75" count="0" type="stmt"/>
-          <line num="84" count="0" type="stmt"/>
-          <line num="90" count="0" type="stmt"/>
+          <metrics statements="21" coveredstatements="21" conditionals="2" coveredconditionals="2" methods="6" coveredmethods="6"/>
+          <line num="9" count="2" type="stmt"/>
+          <line num="22" count="1" type="stmt"/>
+          <line num="23" count="1" type="stmt"/>
+          <line num="27" count="1" type="stmt"/>
+          <line num="28" count="1" type="stmt"/>
+          <line num="32" count="2" type="stmt"/>
+          <line num="34" count="2" type="stmt"/>
+          <line num="38" count="2" type="stmt"/>
+          <line num="40" count="2" type="stmt"/>
+          <line num="45" count="2" type="stmt"/>
+          <line num="47" count="2" type="stmt"/>
+          <line num="51" count="2" type="stmt"/>
+          <line num="53" count="2" type="stmt"/>
+          <line num="65" count="2" type="stmt"/>
+          <line num="67" count="2" type="stmt"/>
+          <line num="69" count="2" type="stmt"/>
+          <line num="71" count="6" type="cond" truecount="2" falsecount="0"/>
+          <line num="77" count="6" type="stmt"/>
+          <line num="86" count="14" type="stmt"/>
+          <line num="94" count="2" type="stmt"/>
+          <line num="101" count="2" type="stmt"/>
         </file>
         <file name="GnomeList.js" path="C:\Users\Ema Suriano\git\brastlewark-finder\src\shared\components\GnomeList\GnomeList.js">
-          <metrics statements="9" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="3" coveredmethods="0"/>
-          <line num="1" count="0" type="stmt"/>
-          <line num="2" count="0" type="stmt"/>
-          <line num="3" count="0" type="stmt"/>
-          <line num="4" count="0" type="cond" truecount="0" falsecount="4"/>
-          <line num="6" count="0" type="stmt"/>
-          <line num="7" count="0" type="stmt"/>
-          <line num="8" count="0" type="stmt"/>
-          <line num="12" count="0" type="stmt"/>
-          <line num="13" count="0" type="stmt"/>
+          <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+          <line num="6" count="1" type="stmt"/>
+          <line num="7" count="2" type="stmt"/>
+          <line num="8" count="4" type="stmt"/>
+          <line num="12" count="1" type="stmt"/>
+          <line num="16" count="1" type="stmt"/>
         </file>
         <file name="GnomeListContainer.js" path="C:\Users\Ema Suriano\git\brastlewark-finder\src\shared\components\GnomeList\GnomeListContainer.js">
-          <metrics statements="3" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
-          <line num="1" count="0" type="cond" truecount="0" falsecount="4"/>
-          <line num="3" count="0" type="stmt"/>
-          <line num="11" count="0" type="stmt"/>
-        </file>
-        <file name="index.js" path="C:\Users\Ema Suriano\git\brastlewark-finder\src\shared\components\GnomeList\index.js">
-          <metrics statements="1" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
-          <line num="1" count="0" type="cond" truecount="0" falsecount="4"/>
+          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="3" count="2" type="stmt"/>
+          <line num="13" count="2" type="stmt"/>
         </file>
       </package>
       <package name="src.shared.constants">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <file name="theme.js" path="C:\Users\Ema Suriano\git\brastlewark-finder\src\shared\constants\theme.js">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="3" count="1" type="stmt"/>
+          <line num="3" count="10" type="stmt"/>
         </file>
       </package>
     </metrics>

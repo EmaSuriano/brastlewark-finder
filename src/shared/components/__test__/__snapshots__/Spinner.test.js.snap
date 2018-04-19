@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Spinner /> render 1`] = `
+<i
+  className=""
+  color="#EF8354"
+  gap={4}
+  size="128px"
+  theme={
+    Object {
+      "accent": "#EF8354",
+      "background": "#4F5D75",
+      "disabled": "#BFC0C0",
+      "light": "#FFFFFF",
+      "secondary": "#2D3142",
+    }
+  }
+  thickness={4}
+/>
+`;

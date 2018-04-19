@@ -19,4 +19,6 @@ Picture.propTypes = {
   size: PropTypes.number.isRequired,
 };
 
+Picture.displayName = 'Picture';
+
 export default Picture;

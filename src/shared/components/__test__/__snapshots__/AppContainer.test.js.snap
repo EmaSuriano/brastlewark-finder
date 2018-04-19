@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AppContainer /> render 1`] = `
+.c0 {
+  background: #4F5D75;
+  height: 100vh;
+  overflow-y: auto;
+  min-width: 600px;
+}
+
+<div
+  className="c0"
+/>
+`;

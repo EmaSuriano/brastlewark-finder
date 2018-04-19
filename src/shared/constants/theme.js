@@ -6,7 +6,7 @@ export const ThemePropTypes = PropTypes.shape({
   disabled: PropTypes.string,
   accent: PropTypes.string,
   secondary: PropTypes.string,
-}).isRequired;
+});
 
 export default {
   background: '#4F5D75',

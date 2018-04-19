@@ -20,4 +20,6 @@ Title.defaultProps = {
   color: 'light',
 };
 
+Title.displayName = 'Title';
+
 export default Title;

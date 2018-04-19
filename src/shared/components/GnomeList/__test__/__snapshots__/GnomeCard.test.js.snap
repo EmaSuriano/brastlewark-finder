@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CardGrid /> render 1`] = `
+.c0 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 'picture name name' 'picture professions professions' 'picture professions professions';
+  grid-gap: 10px;
+  background: white;
+  border-radius: 2px;
+  height: 100%;
+  -webkit-transition: all 0.3s cubic-bezier(0.25,0.8,0.25,1);
+  transition: all 0.3s cubic-bezier(0.25,0.8,0.25,1);
+  box-shadow: 0 1px 3px #2D314240, 0 1px 2px #2D314280;
+  padding: 0 20px;
+}
+
+.c0:hover {
+  box-shadow: 0 14px 28px #2D314288, 0 10px 10px #2D314260;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`<GnomeName /> render 1`] = `
+.c0 {
+  font-weight: inherit;
+  font-size: inherit;
+  grid-area: name;
+  margin-bottom: 0;
+}
+
+<p
+  className="c0"
+  color="light"
+  fontSize="inherit"
+/>
+`;
+
+exports[`<GnomePicture /> render 1`] = `
+.c0 {
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  margin: auto;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  object-fit: cover;
+  border: 1px solid;
+  grid-area: picture;
+}
+
+<img
+  atl="Gnome profile picture"
+  className="c0"
+  size={1}
+/>
+`;
+
+exports[`<GnomeProfessions /> render 1`] = `
+.c0 {
+  grid-area: professions;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`<StyledLink /> render 1`] = `
+.c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:focus,
+.c0:hover,
+.c0:visited,
+.c0:link,
+.c0:active {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<Link
+  className="c0"
+  replace={false}
+  to="/"
+/>
+`;

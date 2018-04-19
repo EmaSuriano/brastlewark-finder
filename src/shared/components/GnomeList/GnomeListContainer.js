@@ -10,4 +10,6 @@ const GnomeListContainer = styled.div`
   align-content: center;
 `;
 
+GnomeListContainer.displayName = 'GnomeListContainer';
+
 export default GnomeListContainer;

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import { ThemePropTypes } from 'shared/constants/theme';
 
 const DISABLED_FUNC = () => false;
 
@@ -22,11 +23,14 @@ const Button = styled.button.attrs({
 Button.propTypes = {
   disabled: PropTypes.bool,
   onClick: PropTypes.func,
+  theme: ThemePropTypes,
 };
 
 Button.defaultProps = {
   disabled: false,
   onClick: DISABLED_FUNC,
 };
+
+Button.displayName = 'Button';
 
 export default Button;

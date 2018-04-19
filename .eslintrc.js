@@ -1,5 +1,11 @@
 module.exports = {
-  extends: ['plugin:react/recommended', 'airbnb'],
+  extends: [
+    'plugin:react/recommended',
+    'prettier',
+    'prettier/react',
+    'prettier/standard',
+    'airbnb',
+  ],
   env: {
     jest: true,
     browser: true,
@@ -9,6 +15,8 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
     'react/jsx-filename-extension': 'off',
     'function-paren-newline': 'off',
+    indent: 'off',
+    'object-curly-newline': 'off',
   },
   settings: {
     'import/resolver': {

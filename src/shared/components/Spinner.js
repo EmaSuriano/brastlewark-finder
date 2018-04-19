@@ -1,7 +1,16 @@
-import React from 'react';
 import SpinnerSvg from 'react-svg-spinner';
-import { withTheme } from 'styled-components';
+import styled from 'styled-components';
+import { ThemePropTypes } from 'shared/constants/theme';
 
-const Spinner = ({ theme }) => <SpinnerSvg size="128px" color={theme.accent} />;
+const Spinner = styled(SpinnerSvg).attrs({
+  size: '128px',
+  color: props => props.theme.accent,
+})``;
 
-export default withTheme(Spinner);
+Spinner.propTypes = {
+  theme: ThemePropTypes,
+};
+
+Spinner.displayName = 'Spinner';
+
+export default Spinner;

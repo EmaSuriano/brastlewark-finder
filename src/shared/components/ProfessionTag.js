@@ -13,4 +13,6 @@ const ProfessionTag = styled.span`
   padding: 3px;
 `;
 
+ProfessionTag.displayName = 'ProfessionTag';
+
 export default ProfessionTag;
