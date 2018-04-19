@@ -19,6 +19,7 @@ module.exports = {
     indent: 'off',
     'object-curly-newline': 'off',
     'arrow-parens': 'off',
+    'react/no-typos': 'off',
   },
   settings: {
     'import/resolver': {

@@ -10,3 +10,7 @@ export const GET_GNOMES = gql`
     }
   }
 `;
+
+export default {
+  GET_GNOMES,
+};

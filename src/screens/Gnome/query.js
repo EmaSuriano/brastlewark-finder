@@ -19,3 +19,7 @@ export const GET_GNOME_BY_ID = gql`
     }
   }
 `;
+
+export default {
+  GET_GNOME_BY_ID,
+};

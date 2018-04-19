@@ -46,7 +46,12 @@ const ProfessionSelector = ({ onChange, selected }) => (
 );
 
 ProfessionSelector.propTypes = {
-  onChange: PropTypes.func,
+  onChange: PropTypes.func.isRequired,
+  selected: PropTypes.arrayOf(PropTypes.string),
+};
+
+ProfessionSelector.defaultProps = {
+  selected: [],
 };
 
 export default ProfessionSelector;

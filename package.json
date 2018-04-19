@@ -46,6 +46,7 @@
     "react-modal": "^3.3.2",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
+    "react-router-prop-types": "^1.0.3",
     "react-scripts": "^1.1.4",
     "react-select": "^1.2.1",
     "react-svg-spinner": "^1.0.1",
@@ -74,8 +75,6 @@
       "!**/setupTests.js",
       "!src/**/index.js"
     ],
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ]
+    "snapshotSerializers": ["enzyme-to-json/serializer"]
   }
 }
