@@ -63,7 +63,7 @@ And if the user click on a gnome, a popup will be displayed showing all the info
 
 #### Project's structure
 
-**Redux is organized using the ducks structure due to the complexity of the store, splitting each part of redux (actions, reducers, selectors, etc.) into different files will increase the boilerplate unnecesarily**
+**Redux is organized using the [ducks structure](https://github.com/erikras/ducks-modular-redux) due to the complexity of the store, splitting each part of redux (actions, reducers, selectors, etc.) into different files will increase the boilerplate unnecesarily**
 
 ```
 /src
