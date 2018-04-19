@@ -6,6 +6,7 @@ module.exports = {
     'prettier/standard',
     'airbnb',
   ],
+  parser: 'babel-eslint',
   env: {
     jest: true,
     browser: true,
@@ -17,6 +18,7 @@ module.exports = {
     'function-paren-newline': 'off',
     indent: 'off',
     'object-curly-newline': 'off',
+    'arrow-parens': 'off',
   },
   settings: {
     'import/resolver': {

@@ -4,6 +4,7 @@ import { Query } from 'react-apollo';
 import { Message, Spinner, GnomeList } from 'shared/components';
 import { GET_GNOMES } from './query';
 
+// This is a PureComponent in order to avoid fetching again gnomes when the criteria hasn't changed!
 class GnomeResult extends PureComponent {
   render() {
     const { criteria } = this.props;
@@ -24,7 +25,10 @@ class GnomeResult extends PureComponent {
 }
 
 GnomeResult.propTypes = {
-  criteria: PropTypes.object,
+  criteria: PropTypes.shape({
+    name: PropTypes.string,
+    professions: PropTypes.arrayOf(PropTypes.string),
+  }).isRequired,
 };
 
 export default GnomeResult;

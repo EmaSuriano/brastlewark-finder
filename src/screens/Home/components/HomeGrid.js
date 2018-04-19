@@ -11,4 +11,6 @@ const HomeGrid = styled.div`
   padding: 20px;
 `;
 
+HomeGrid.displayName = 'HomeGrid';
+
 export default HomeGrid;

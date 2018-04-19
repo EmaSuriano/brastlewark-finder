@@ -7,4 +7,6 @@ const FiltersForm = styled.form`
   margin: 1em 0;
 `;
 
+FiltersForm.displayName = 'FiltersForm';
+
 export default FiltersForm;

@@ -23,10 +23,11 @@ export default class GnomeScreen extends Component {
         <Query query={GET_GNOME_BY_ID} variables={{ id }}>
           {({ loading, error, data }) => {
             if (loading) return <Spinner />;
-            if (error)
-              return (
-                <Message color="secondary">{`Error! ${error.message}`}</Message>
+            if (error) {
+ return (
+   <Message color="secondary">{`Error! ${error.message}`}</Message>
               );
+}
             return <GnomeInformation {...data.gnome} />;
           }}
         </Query>

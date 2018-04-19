@@ -8,10 +8,16 @@ import HomeGrid from './components/HomeGrid';
 
 class HomeScreen extends Component {
   static propTypes = {
-    data: PropTypes.object,
-    criteria: PropTypes.object,
+    criteria: PropTypes.shape({
+      name: PropTypes.string,
+      professions: PropTypes.arrayOf(PropTypes.string),
+    }).isRequired,
     isFilterApplied: PropTypes.bool,
-    setGnomeCriteria: PropTypes.func,
+    setGnomeCriteria: PropTypes.func.isRequired,
+  };
+
+  static defaultProps = {
+    isFilterApplied: false,
   };
 
   state = {
@@ -19,24 +25,27 @@ class HomeScreen extends Component {
     professions: [],
   };
 
+  onSubmit = evt => {
+    evt.preventDefault();
+    this.props.setGnomeCriteria(this.state);
+  };
+
   changeName = ({ target: { value } }) => this.setState({ name: value });
 
   changeProfessions = professions => this.setState({ professions });
 
-  searchGnomes = () => this.props.setGnomeCriteria(this.state);
-
-  onSubmit = evt => {
-    evt.preventDefault();
-    this.searchGnomes();
-  };
-
   render() {
     const { isFilterApplied, criteria } = this.props;
     const { name, professions } = this.state;
-    const disabled = !this.state.name && this.state.professions.length === 0;
+
     return (
       <HomeGrid>
-        <Title>Brastlewark Finder 🔎</Title>
+        <Title>
+          Brastlewark Finder
+          <span role="img" aria-label="search">
+            🔎
+          </span>
+        </Title>
         <FiltersForm onSubmit={this.onSubmit}>
           <TextField
             value={name}
@@ -47,11 +56,15 @@ class HomeScreen extends Component {
             onChange={this.changeProfessions}
             selected={professions}
           />
-          <Button disabled={disabled}>Search</Button>
+          <Button
+            disabled={!this.state.name && this.state.professions.length === 0}
+          >
+            Search
+          </Button>
         </FiltersForm>
         {!isFilterApplied ? (
           <Message fontSize="1.2em">
-            Please filter by gnome's name or professions in order to search!
+            Please filter by name or professions in order to search!
           </Message>
         ) : (
           <GnomeResult criteria={criteria} />

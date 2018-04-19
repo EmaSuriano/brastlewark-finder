@@ -74,6 +74,8 @@
       "!**/setupTests.js",
       "!src/**/index.js"
     ],
-    "snapshotSerializers": ["enzyme-to-json/serializer"]
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   }
 }
